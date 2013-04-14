@@ -136,49 +136,7 @@ INT8U halRfReceivePacket(INT8U *rxBuffer, INT8U *length);
 typedef struct S_RF_SETTINGS
 {
 	INT8U FSCTRL2;		//自已加的
-    INT8U FSCTRL1;   // Frequency synthesizer control.
-    INT8U FSCTRL0;   // Frequency synthesizer control.
-    INT8U FREQ2;     // Frequency control word, high INT8U.
-    INT8U FREQ1;     // Frequency control word, middle INT8U.
-    INT8U FREQ0;     // Frequency control word, low INT8U.
-    INT8U MDMCFG4;   // Modem configuration.
-    INT8U MDMCFG3;   // Modem configuration.
-    INT8U MDMCFG2;   // Modem configuration.
-    INT8U MDMCFG1;   // Modem configuration.
-    INT8U MDMCFG0;   // Modem configuration.
-    INT8U CHANNR;    // Channel number.
-    INT8U DEVIATN;   // Modem deviation setting (when FSK modulation is enabled).
-    INT8U FREND1;    // Front end RX configuration.
-    INT8U FREND0;    // Front end RX configuration.
-    INT8U MCSM0;     // Main Radio Control State Machine configuration.
-    INT8U FOCCFG;    // Frequency Offset Compensation Configuration.
-    INT8U BSCFG;     // Bit synchronization Configuration.
-    INT8U AGCCTRL2;  // AGC control.
-	INT8U AGCCTRL1;  // AGC control.
-    INT8U AGCCTRL0;  // AGC control.
-    INT8U FSCAL3;    // Frequency synthesizer calibration.
-    INT8U FSCAL2;    // Frequency synthesizer calibration.
-	INT8U FSCAL1;    // Frequency synthesizer calibration.
-    INT8U FSCAL0;    // Frequency synthesizer calibration.
-    INT8U FSTEST;    // Frequency synthesizer calibration control
-    INT8U TEST2;     // Various test settings.
-    INT8U TEST1;     // Various test settings.
-    INT8U TEST0;     // Various test settings.
-    INT8U IOCFG2;    // GDO2 output pin configuration
-    INT8U IOCFG0;    // GDO0 output pin configuration
-    INT8U PKTCTRL1;  // Packet automation control.
-    INT8U PKTCTRL0;  // Packet automation control.
-    INT8U ADDR;      // Device address.
-    INT8U PKTLEN;    // Packet length.
-} RF_SETTINGS;
-
-/////////////////////////////////////////////////////////////////
-const RF_SETTINGS rfSettings = 
-{
-	0x00,
-    0x08,   // FSCTRL1   Frequency synthesizer control.
-    0x00,   // FSCTRL0   Frequency synthesizer control.
-    0x10,   // FREQ2     Frequency control word, high byte.
+    INT8U FSCTRL1;   // Frequency synthesizer control
     0xA7,   // FREQ1     Frequency control word, middle byte.
     0x62,   // FREQ0     Frequency control word, low byte.
     0x5B,   // MDMCFG4   Modem configuration.
