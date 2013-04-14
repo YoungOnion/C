@@ -1,13 +1,4 @@
-#include <reg52.h>
-#include <intrins.h>
-#define		INT8U		unsigned char
-#define		INT16U		unsigned int
-
-#define 	WRITE_BURST     	0x40						//连续写入
-#define 	READ_SINGLE     	0x80						//读
-#define 	READ_BURST      	0xC0						//连续读
-#define 	BYTES_IN_RXFIFO     0x7F  						//接收缓冲区的有效字节数
-#define 	CRC_OK              0x80 						//CRC校验通过位标志
+					//CRC校验通过位标志
 //*****************************************************************************************
 sbit 	GDO0	=P1^3;
 sbit 	GDO2	=P3^2;
